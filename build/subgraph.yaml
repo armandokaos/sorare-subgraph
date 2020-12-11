@@ -2,7 +2,7 @@ specVersion: 0.0.2
 description: Sorare Subgraph
 repository: https://github.com/armandokaos/sorare-subgraph
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: Sorare
@@ -23,7 +23,7 @@ dataSources:
         - Transfer
       abis:
         - name: Sorare
-          file: ./abis/Sorare.json
+          file: Sorare/abis/Sorare.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,indexed uint256)
           handler: handleApproval
@@ -37,4 +37,4 @@ dataSources:
           handler: handleRoleRevoked
         - event: Transfer(indexed address,indexed address,indexed uint256)
           handler: handleTransfer
-      file: ./src/mapping.ts
+      file: Sorare/Sorare.wasm

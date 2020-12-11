@@ -1,0 +1,14 @@
+[31mNo Graph node provided[39m
+[0m[0m
+[0mgraph deploy [options] <subgraph-name> [<subgraph-manifest>][0m
+
+[0mOptions:[0m
+
+[0m      --access-token <token>    Graph access token[0m
+[0m  -g, --node <node>             Graph node to deploy the subgraph to[0m
+[0m  -h, --help                    Show usage information[0m
+[0m  -i, --ipfs <node>             Upload build results to an IPFS node[0m
+[0m  -o, --output-dir <path>       Output directory for build results (default: build/)[0m
+[0m      --skip-migrations         Skip subgraph migrations (default: false)[0m
+[0m  -w, --watch                   Regenerate types when subgraph files change (default: false)[0m
+[0m[0m
